@@ -8,9 +8,9 @@ print("1. Запрос без параметра method:", response_1.text)
 
 # 2. http-запрос не из списка (например, HEAD)
 response_2_1 = requests.head(url)
-print("2.1. http-запрос не из списка:", response_2.text)
+print("2.1. http-запрос HEAD не из списка:", response_2.text)
 response_2_2 = requests.options(url)
-print("2.2. http-запрос не из списка:", response_2_1.text)
+print("2.2. http-запрос OPTIONS не из списка:", response_2_1.text)
 
 # 3. Запрос с правильным значением method
 valid_methods = ['GET', 'POST', 'PUT', 'DELETE']
